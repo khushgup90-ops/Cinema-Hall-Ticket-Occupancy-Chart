@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+from background import add_scroll_sky
+
 from database import (
     initialize_database,
     get_shows,
@@ -25,6 +27,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+add_scroll_sky()
 
 
 # ==========================================
